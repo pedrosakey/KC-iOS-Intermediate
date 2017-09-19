@@ -1,0 +1,477 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CF881B4E1F710B4D00F47554 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF881B4D1F710B4D00F47554 /* AppDelegate.swift */; };
+		CF881B501F710B4D00F47554 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF881B4F1F710B4D00F47554 /* ViewController.swift */; };
+		CF881B551F710B4D00F47554 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF881B541F710B4D00F47554 /* Assets.xcassets */; };
+		CF881B581F710B4D00F47554 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF881B561F710B4D00F47554 /* LaunchScreen.storyboard */; };
+		CF881B631F710B4D00F47554 /* MadridShoppingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF881B621F710B4D00F47554 /* MadridShoppingTests.swift */; };
+		CF881B761F71473800F47554 /* sample-map-DetailShopViewController.png in Resources */ = {isa = PBXBuildFile; fileRef = CF881B731F7135CA00F47554 /* sample-map-DetailShopViewController.png */; };
+		CF881B771F71473800F47554 /* sample-map-ShopsViewController.png in Resources */ = {isa = PBXBuildFile; fileRef = CF881B741F7135CA00F47554 /* sample-map-ShopsViewController.png */; };
+		CF881B781F71473800F47554 /* logo-ms.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CF881B701F711CBC00F47554 /* logo-ms.jpeg */; };
+		CF881B7A1F7149EA00F47554 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF881B791F7149EA00F47554 /* Main.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CF881B5F1F710B4D00F47554 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CF881B421F710B4D00F47554 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF881B491F710B4D00F47554;
+			remoteInfo = MadridShopping;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CF881B4A1F710B4D00F47554 /* MadridShopping.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MadridShopping.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF881B4D1F710B4D00F47554 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CF881B4F1F710B4D00F47554 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CF881B541F710B4D00F47554 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CF881B571F710B4D00F47554 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CF881B591F710B4D00F47554 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF881B5E1F710B4D00F47554 /* MadridShoppingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MadridShoppingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF881B621F710B4D00F47554 /* MadridShoppingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MadridShoppingTests.swift; sourceTree = "<group>"; };
+		CF881B641F710B4D00F47554 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF881B701F711CBC00F47554 /* logo-ms.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "logo-ms.jpeg"; sourceTree = "<group>"; };
+		CF881B731F7135CA00F47554 /* sample-map-DetailShopViewController.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sample-map-DetailShopViewController.png"; sourceTree = "<group>"; };
+		CF881B741F7135CA00F47554 /* sample-map-ShopsViewController.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sample-map-ShopsViewController.png"; sourceTree = "<group>"; };
+		CF881B791F7149EA00F47554 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CF881B471F710B4D00F47554 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF881B5B1F710B4D00F47554 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CF881B411F710B4D00F47554 = {
+			isa = PBXGroup;
+			children = (
+				CF881B4C1F710B4D00F47554 /* MadridShopping */,
+				CF881B611F710B4D00F47554 /* MadridShoppingTests */,
+				CF881B4B1F710B4D00F47554 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CF881B4B1F710B4D00F47554 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CF881B4A1F710B4D00F47554 /* MadridShopping.app */,
+				CF881B5E1F710B4D00F47554 /* MadridShoppingTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF881B4C1F710B4D00F47554 /* MadridShopping */ = {
+			isa = PBXGroup;
+			children = (
+				CF881B4D1F710B4D00F47554 /* AppDelegate.swift */,
+				CF881B6E1F71196900F47554 /* Controllers */,
+				CF881B6D1F71195A00F47554 /* Views */,
+				CF881B6F1F71199600F47554 /* Resources */,
+				CF881B591F710B4D00F47554 /* Info.plist */,
+				CF881B541F710B4D00F47554 /* Assets.xcassets */,
+			);
+			path = MadridShopping;
+			sourceTree = "<group>";
+		};
+		CF881B611F710B4D00F47554 /* MadridShoppingTests */ = {
+			isa = PBXGroup;
+			children = (
+				CF881B621F710B4D00F47554 /* MadridShoppingTests.swift */,
+				CF881B641F710B4D00F47554 /* Info.plist */,
+			);
+			path = MadridShoppingTests;
+			sourceTree = "<group>";
+		};
+		CF881B6D1F71195A00F47554 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CF881B791F7149EA00F47554 /* Main.storyboard */,
+				CF881B561F710B4D00F47554 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CF881B6E1F71196900F47554 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CF881B4F1F710B4D00F47554 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		CF881B6F1F71199600F47554 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CF881B731F7135CA00F47554 /* sample-map-DetailShopViewController.png */,
+				CF881B741F7135CA00F47554 /* sample-map-ShopsViewController.png */,
+				CF881B701F711CBC00F47554 /* logo-ms.jpeg */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CF881B491F710B4D00F47554 /* MadridShopping */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF881B671F710B4D00F47554 /* Build configuration list for PBXNativeTarget "MadridShopping" */;
+			buildPhases = (
+				CF881B461F710B4D00F47554 /* Sources */,
+				CF881B471F710B4D00F47554 /* Frameworks */,
+				CF881B481F710B4D00F47554 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MadridShopping;
+			productName = MadridShopping;
+			productReference = CF881B4A1F710B4D00F47554 /* MadridShopping.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CF881B5D1F710B4D00F47554 /* MadridShoppingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF881B6A1F710B4D00F47554 /* Build configuration list for PBXNativeTarget "MadridShoppingTests" */;
+			buildPhases = (
+				CF881B5A1F710B4D00F47554 /* Sources */,
+				CF881B5B1F710B4D00F47554 /* Frameworks */,
+				CF881B5C1F710B4D00F47554 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CF881B601F710B4D00F47554 /* PBXTargetDependency */,
+			);
+			name = MadridShoppingTests;
+			productName = MadridShoppingTests;
+			productReference = CF881B5E1F710B4D00F47554 /* MadridShoppingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CF881B421F710B4D00F47554 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = pedrosapro;
+				TargetAttributes = {
+					CF881B491F710B4D00F47554 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					CF881B5D1F710B4D00F47554 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CF881B491F710B4D00F47554;
+					};
+				};
+			};
+			buildConfigurationList = CF881B451F710B4D00F47554 /* Build configuration list for PBXProject "MadridShopping" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF881B411F710B4D00F47554;
+			productRefGroup = CF881B4B1F710B4D00F47554 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CF881B491F710B4D00F47554 /* MadridShopping */,
+				CF881B5D1F710B4D00F47554 /* MadridShoppingTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CF881B481F710B4D00F47554 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF881B761F71473800F47554 /* sample-map-DetailShopViewController.png in Resources */,
+				CF881B771F71473800F47554 /* sample-map-ShopsViewController.png in Resources */,
+				CF881B781F71473800F47554 /* logo-ms.jpeg in Resources */,
+				CF881B7A1F7149EA00F47554 /* Main.storyboard in Resources */,
+				CF881B581F710B4D00F47554 /* LaunchScreen.storyboard in Resources */,
+				CF881B551F710B4D00F47554 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF881B5C1F710B4D00F47554 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CF881B461F710B4D00F47554 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF881B501F710B4D00F47554 /* ViewController.swift in Sources */,
+				CF881B4E1F710B4D00F47554 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF881B5A1F710B4D00F47554 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF881B631F710B4D00F47554 /* MadridShoppingTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CF881B601F710B4D00F47554 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF881B491F710B4D00F47554 /* MadridShopping */;
+			targetProxy = CF881B5F1F710B4D00F47554 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CF881B561F710B4D00F47554 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF881B571F710B4D00F47554 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CF881B651F710B4D00F47554 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CF881B661F710B4D00F47554 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CF881B681F710B4D00F47554 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2DSC2P3NCP;
+				INFOPLIST_FILE = MadridShopping/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pro.pedrosa.keepCoding.MadridShopping;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CF881B691F710B4D00F47554 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2DSC2P3NCP;
+				INFOPLIST_FILE = MadridShopping/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pro.pedrosa.keepCoding.MadridShopping;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CF881B6B1F710B4D00F47554 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2DSC2P3NCP;
+				INFOPLIST_FILE = MadridShoppingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pro.pedrosa.keepCoding.MadridShoppingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MadridShopping.app/MadridShopping";
+			};
+			name = Debug;
+		};
+		CF881B6C1F710B4D00F47554 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2DSC2P3NCP;
+				INFOPLIST_FILE = MadridShoppingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pro.pedrosa.keepCoding.MadridShoppingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MadridShopping.app/MadridShopping";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CF881B451F710B4D00F47554 /* Build configuration list for PBXProject "MadridShopping" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF881B651F710B4D00F47554 /* Debug */,
+				CF881B661F710B4D00F47554 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF881B671F710B4D00F47554 /* Build configuration list for PBXNativeTarget "MadridShopping" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF881B681F710B4D00F47554 /* Debug */,
+				CF881B691F710B4D00F47554 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF881B6A1F710B4D00F47554 /* Build configuration list for PBXNativeTarget "MadridShoppingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF881B6B1F710B4D00F47554 /* Debug */,
+				CF881B6C1F710B4D00F47554 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CF881B421F710B4D00F47554 /* Project object */;
+}
