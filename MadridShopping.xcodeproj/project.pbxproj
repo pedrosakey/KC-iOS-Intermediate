@@ -13,6 +13,8 @@
 		CF1FAE4D1F76D4F200B24976 /* DownloadAllShopsInteractorFakeImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1FAE4C1F76D4F200B24976 /* DownloadAllShopsInteractorFakeImpl.swift */; };
 		CF1FAE4F1F76D8DB00B24976 /* Typealias.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1FAE4E1F76D8DB00B24976 /* Typealias.swift */; };
 		CF1FAE511F77CBDD00B24976 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1FAE501F77CBDD00B24976 /* MainViewController.swift */; };
+		CF1FAE531F795AF300B24976 /* ShopsViewController+CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1FAE521F795AF300B24976 /* ShopsViewController+CollectionViewController.swift */; };
+		CF1FAE551F795F3E00B24976 /* ShopCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1FAE541F795F3E00B24976 /* ShopCell.swift */; };
 		CF881B4E1F710B4D00F47554 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF881B4D1F710B4D00F47554 /* AppDelegate.swift */; };
 		CF881B501F710B4D00F47554 /* ShopsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF881B4F1F710B4D00F47554 /* ShopsViewController.swift */; };
 		CF881B551F710B4D00F47554 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF881B541F710B4D00F47554 /* Assets.xcassets */; };
@@ -41,6 +43,8 @@
 		CF1FAE4C1F76D4F200B24976 /* DownloadAllShopsInteractorFakeImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadAllShopsInteractorFakeImpl.swift; sourceTree = "<group>"; };
 		CF1FAE4E1F76D8DB00B24976 /* Typealias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typealias.swift; sourceTree = "<group>"; };
 		CF1FAE501F77CBDD00B24976 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		CF1FAE521F795AF300B24976 /* ShopsViewController+CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ShopsViewController+CollectionViewController.swift"; sourceTree = "<group>"; };
+		CF1FAE541F795F3E00B24976 /* ShopCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopCell.swift; sourceTree = "<group>"; };
 		CF881B4A1F710B4D00F47554 /* MadridShopping.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MadridShopping.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF881B4D1F710B4D00F47554 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CF881B4F1F710B4D00F47554 /* ShopsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopsViewController.swift; sourceTree = "<group>"; };
@@ -140,6 +144,7 @@
 			children = (
 				CF881B791F7149EA00F47554 /* Main.storyboard */,
 				CF881B561F710B4D00F47554 /* LaunchScreen.storyboard */,
+				CF1FAE541F795F3E00B24976 /* ShopCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -149,6 +154,7 @@
 			children = (
 				CF1FAE501F77CBDD00B24976 /* MainViewController.swift */,
 				CF881B4F1F710B4D00F47554 /* ShopsViewController.swift */,
+				CF1FAE521F795AF300B24976 /* ShopsViewController+CollectionViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -275,8 +281,10 @@
 				CF881B4E1F710B4D00F47554 /* AppDelegate.swift in Sources */,
 				CF1FAE491F76D05F00B24976 /* Shop.swift in Sources */,
 				CF1FAE4D1F76D4F200B24976 /* DownloadAllShopsInteractorFakeImpl.swift in Sources */,
+				CF1FAE531F795AF300B24976 /* ShopsViewController+CollectionViewController.swift in Sources */,
 				CF1FAE4F1F76D8DB00B24976 /* Typealias.swift in Sources */,
 				CF1FAE511F77CBDD00B24976 /* MainViewController.swift in Sources */,
+				CF1FAE551F795F3E00B24976 /* ShopCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -11,7 +11,9 @@ import UIKit
 class ShopsViewController: UIViewController {
     
     var shops: Shops?
-   
+    
+    @IBOutlet weak var shopsCollectionView: UICollectionView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -19,12 +21,14 @@ class ShopsViewController: UIViewController {
         
         downloadShopsInteractor.execute { (shops: Shops) in
             // todo OK
-            for i in 1...10 {
-            print("Name: " + shops.get(index: i).name)
-            }
-            }
-        
-
+            
+            print("Name: " + shops.get(index: 0).name)
+            
+            self.shops = shops
+            
+            self.shopsCollectionView.dataSource = self
+            self.shopsCollectionView.delegate = self
+        }
     }
 
 }
