@@ -24,6 +24,7 @@
 		CF881B771F71473800F47554 /* sample-map-ShopsViewController.png in Resources */ = {isa = PBXBuildFile; fileRef = CF881B741F7135CA00F47554 /* sample-map-ShopsViewController.png */; };
 		CF881B781F71473800F47554 /* logo-ms.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CF881B701F711CBC00F47554 /* logo-ms.jpeg */; };
 		CF881B7A1F7149EA00F47554 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF881B791F7149EA00F47554 /* Main.storyboard */; };
+		CF8E178D1F7A9DC7004803F1 /* DownloadAllShopsInteractorNSDataImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8E178C1F7A9DC7004803F1 /* DownloadAllShopsInteractorNSDataImp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		CF881B731F7135CA00F47554 /* sample-map-DetailShopViewController.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sample-map-DetailShopViewController.png"; sourceTree = "<group>"; };
 		CF881B741F7135CA00F47554 /* sample-map-ShopsViewController.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sample-map-ShopsViewController.png"; sourceTree = "<group>"; };
 		CF881B791F7149EA00F47554 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		CF8E178C1F7A9DC7004803F1 /* DownloadAllShopsInteractorNSDataImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadAllShopsInteractorNSDataImp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 				CF1FAE461F76CFFF00B24976 /* DownloadAllShopsInteractor.swift */,
 				CF1FAE4C1F76D4F200B24976 /* DownloadAllShopsInteractorFakeImpl.swift */,
 				CF1FAE4E1F76D8DB00B24976 /* Typealias.swift */,
+				CF8E178C1F7A9DC7004803F1 /* DownloadAllShopsInteractorNSDataImp.swift */,
 			);
 			path = Interactors;
 			sourceTree = "<group>";
@@ -284,6 +287,7 @@
 				CF1FAE531F795AF300B24976 /* ShopsViewController+CollectionViewController.swift in Sources */,
 				CF1FAE4F1F76D8DB00B24976 /* Typealias.swift in Sources */,
 				CF1FAE511F77CBDD00B24976 /* MainViewController.swift in Sources */,
+				CF8E178D1F7A9DC7004803F1 /* DownloadAllShopsInteractorNSDataImp.swift in Sources */,
 				CF1FAE551F795F3E00B24976 /* ShopCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
