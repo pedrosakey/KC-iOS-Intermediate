@@ -25,6 +25,8 @@
 		CF881B781F71473800F47554 /* logo-ms.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CF881B701F711CBC00F47554 /* logo-ms.jpeg */; };
 		CF881B7A1F7149EA00F47554 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF881B791F7149EA00F47554 /* Main.storyboard */; };
 		CF8E178D1F7A9DC7004803F1 /* DownloadAllShopsInteractorNSDataImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8E178C1F7A9DC7004803F1 /* DownloadAllShopsInteractorNSDataImp.swift */; };
+		CF8E17901F7AA0B0004803F1 /* JSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8E178F1F7AA0B0004803F1 /* JSONParser.swift */; };
+		CF8E17921F7AA0FF004803F1 /* DownloadAllShopsInteractorNSURLSessionImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8E17911F7AA0FF004803F1 /* DownloadAllShopsInteractorNSURLSessionImpl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +62,8 @@
 		CF881B741F7135CA00F47554 /* sample-map-ShopsViewController.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sample-map-ShopsViewController.png"; sourceTree = "<group>"; };
 		CF881B791F7149EA00F47554 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		CF8E178C1F7A9DC7004803F1 /* DownloadAllShopsInteractorNSDataImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadAllShopsInteractorNSDataImp.swift; sourceTree = "<group>"; };
+		CF8E178F1F7AA0B0004803F1 /* JSONParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONParser.swift; sourceTree = "<group>"; };
+		CF8E17911F7AA0FF004803F1 /* DownloadAllShopsInteractorNSURLSessionImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadAllShopsInteractorNSURLSessionImpl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,10 +97,12 @@
 		CF1FAE451F76C85600B24976 /* Interactors */ = {
 			isa = PBXGroup;
 			children = (
+				CF8E178E1F7AA05D004803F1 /* JsonParser */,
 				CF1FAE461F76CFFF00B24976 /* DownloadAllShopsInteractor.swift */,
 				CF1FAE4C1F76D4F200B24976 /* DownloadAllShopsInteractorFakeImpl.swift */,
 				CF1FAE4E1F76D8DB00B24976 /* Typealias.swift */,
 				CF8E178C1F7A9DC7004803F1 /* DownloadAllShopsInteractorNSDataImp.swift */,
+				CF8E17911F7AA0FF004803F1 /* DownloadAllShopsInteractorNSURLSessionImpl.swift */,
 			);
 			path = Interactors;
 			sourceTree = "<group>";
@@ -170,6 +176,14 @@
 				CF881B701F711CBC00F47554 /* logo-ms.jpeg */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		CF8E178E1F7AA05D004803F1 /* JsonParser */ = {
+			isa = PBXGroup;
+			children = (
+				CF8E178F1F7AA0B0004803F1 /* JSONParser.swift */,
+			);
+			path = JsonParser;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -280,12 +294,14 @@
 			files = (
 				CF881B501F710B4D00F47554 /* ShopsViewController.swift in Sources */,
 				CF1FAE4B1F76D07700B24976 /* Shops.swift in Sources */,
+				CF8E17901F7AA0B0004803F1 /* JSONParser.swift in Sources */,
 				CF1FAE471F76CFFF00B24976 /* DownloadAllShopsInteractor.swift in Sources */,
 				CF881B4E1F710B4D00F47554 /* AppDelegate.swift in Sources */,
 				CF1FAE491F76D05F00B24976 /* Shop.swift in Sources */,
 				CF1FAE4D1F76D4F200B24976 /* DownloadAllShopsInteractorFakeImpl.swift in Sources */,
 				CF1FAE531F795AF300B24976 /* ShopsViewController+CollectionViewController.swift in Sources */,
 				CF1FAE4F1F76D8DB00B24976 /* Typealias.swift in Sources */,
+				CF8E17921F7AA0FF004803F1 /* DownloadAllShopsInteractorNSURLSessionImpl.swift in Sources */,
 				CF1FAE511F77CBDD00B24976 /* MainViewController.swift in Sources */,
 				CF8E178D1F7A9DC7004803F1 /* DownloadAllShopsInteractorNSDataImp.swift in Sources */,
 				CF1FAE551F795F3E00B24976 /* ShopCell.swift in Sources */,
