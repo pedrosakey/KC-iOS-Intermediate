@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13189.4" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7sM-xu-HjK">
-    <device id="retina3_5" orientation="portrait">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -20,17 +20,17 @@
             <objects>
                 <viewController title="Madrid Shopping" id="BYZ-38-t0r" customClass="MainViewController" customModule="MadridShopping" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleAspectFit" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Hys-8E-ynz">
-                                <rect key="frame" x="80" y="80" width="160" height="304"/>
+                                <rect key="frame" x="80" y="80" width="215" height="304"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo-ms.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="NZv-pn-4rI">
-                                        <rect key="frame" x="0.0" y="0.0" width="160" height="220"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="215" height="220"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Eo-A4-mJu">
-                                        <rect key="frame" x="0.0" y="228" width="160" height="34"/>
+                                        <rect key="frame" x="0.0" y="228" width="215" height="34"/>
                                         <color key="backgroundColor" red="1" green="0.4941176471" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <rect key="contentStretch" x="0.0" y="1" width="1" height="1"/>
                                         <state key="normal" title="Shops">
@@ -47,7 +47,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MOS-Me-YFx">
-                                        <rect key="frame" x="0.0" y="270" width="160" height="34"/>
+                                        <rect key="frame" x="0.0" y="270" width="215" height="34"/>
                                         <color key="backgroundColor" red="1" green="0.4941176471" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <rect key="contentStretch" x="0.0" y="1" width="1" height="1"/>
                                         <state key="normal" title="Activities">
@@ -90,7 +90,7 @@
             <objects>
                 <viewController title="Activities" id="2tu-rB-6f3" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bgM-fO-bKa">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vp8-Zn-Xrx">
@@ -112,17 +112,17 @@
             <objects>
                 <viewController title="Shops" id="57p-x9-nCf" customClass="ShopsViewController" customModule="MadridShopping" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xGh-H2-pPO">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="k9t-nT-a1M">
-                                <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <subviews>
                                     <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="xQl-Mg-qXf">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="208"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="301.5"/>
                                     </mapView>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="2je-Fv-zhS">
-                                        <rect key="frame" x="0.0" y="208" width="320" height="208"/>
+                                        <rect key="frame" x="0.0" y="301.5" width="375" height="301.5"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="NYh-sK-h6I">
                                             <size key="itemSize" width="359" height="67"/>
@@ -132,7 +132,7 @@
                                         </collectionViewFlowLayout>
                                         <cells>
                                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ShopCell" id="jTs-FS-TX5" customClass="ShopCell" customModule="MadridShopping" customModuleProvider="target">
-                                                <rect key="frame" x="-19.5" y="0.0" width="359" height="67"/>
+                                                <rect key="frame" x="8" y="0.0" width="359" height="67"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                                     <rect key="frame" x="0.0" y="0.0" width="359" height="67"/>
@@ -155,6 +155,7 @@
                                                 <connections>
                                                     <outlet property="imageView" destination="vpv-TW-2nH" id="Cfp-ON-scy"/>
                                                     <outlet property="label" destination="37x-pM-vzD" id="YVd-Lw-0Oq"/>
+                                                    <segue destination="BA4-qc-XRt" kind="show" identifier="ShowShopDetailSegue" id="QVu-2b-byx"/>
                                                 </connections>
                                             </collectionViewCell>
                                         </cells>
@@ -187,7 +188,7 @@
             <objects>
                 <navigationController hidesBarsOnSwipe="YES" id="7sM-xu-HjK" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="fiF-tx-XgO">
-                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="KBA-eo-O47">
@@ -201,27 +202,16 @@
             </objects>
             <point key="canvasLocation" x="-5980" y="629"/>
         </scene>
-        <!--View Controller-->
+        <!--Shop View Detail Controller-->
         <scene sceneID="rFM-tX-HuP">
             <objects>
-                <viewController id="BA4-qc-XRt" sceneMemberID="viewController">
+                <viewController id="BA4-qc-XRt" customClass="ShopViewDetailController" customModule="MadridShopping" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Pdo-fO-DJm">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sample-map-DetailShopViewController.png" translatesAutoresizingMaskIntoConstraints="NO" id="L3h-Y4-YvC">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="289"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Antiguedades Serrano" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K5l-cW-QrJ">
-                                <rect key="frame" x="0.0" y="350" width="375" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="28"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="It's a speciali shop located in Madrid city center from 1916. You can find all the things that you love." textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="gJQ-1k-p40">
-                                <rect key="frame" x="36" y="409" width="291" height="104"/>
+                                <rect key="frame" x="16" y="387" width="291" height="104"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
@@ -241,18 +231,34 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="jZI-Wh-Spe">
+                                <rect key="frame" x="0.0" y="64" width="375" height="226"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </mapView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Antiguedades Serrano" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K5l-cW-QrJ">
+                                <rect key="frame" x="-27" y="316" width="375" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="1WF-gE-XB3"/>
                     </view>
+                    <connections>
+                        <outlet property="shopDetaiName" destination="K5l-cW-QrJ" id="5ra-Fy-xMW"/>
+                        <outlet property="shopDetailAddress" destination="NmY-ti-0iq" id="zqH-tl-CG8"/>
+                        <outlet property="shopDetailDescription" destination="gJQ-1k-p40" id="bBZ-rJ-dbp"/>
+                        <outlet property="shopDetailOpeningHours" destination="eYP-a8-Lmd" id="JaY-O8-c9k"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LNh-xm-hcc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2305" y="298"/>
+            <point key="canvasLocation" x="-2306.4000000000001" y="297.30134932533736"/>
         </scene>
     </scenes>
     <resources>
         <image name="logo-ms.jpeg" width="220" height="220"/>
-        <image name="sample-map-DetailShopViewController.png" width="688" height="452"/>
     </resources>
 </document>

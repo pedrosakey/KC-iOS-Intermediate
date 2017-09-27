@@ -30,6 +30,15 @@ class ShopsViewController: UIViewController {
             self.shopsCollectionView.delegate = self
         }
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ShowShopDetailSegue" {
+            let vc = segue.destination as! ShopViewDetailController
+            let indexPath = self.shopsCollectionView.indexPathsForSelectedItems![0]
+            let shop = self.shops?.get(index: indexPath.row)
+            vc.shop = shop
+        }
+    }
 
 }
 

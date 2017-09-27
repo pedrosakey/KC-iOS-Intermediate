@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CF165F151F7BFD0300AB3A97 /* ShopViewDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF165F141F7BFD0300AB3A97 /* ShopViewDetailController.swift */; };
 		CF1FAE471F76CFFF00B24976 /* DownloadAllShopsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1FAE461F76CFFF00B24976 /* DownloadAllShopsInteractor.swift */; };
 		CF1FAE491F76D05F00B24976 /* Shop.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1FAE481F76D05F00B24976 /* Shop.swift */; };
 		CF1FAE4B1F76D07700B24976 /* Shops.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1FAE4A1F76D07700B24976 /* Shops.swift */; };
@@ -42,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CF165F141F7BFD0300AB3A97 /* ShopViewDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopViewDetailController.swift; sourceTree = "<group>"; };
 		CF1FAE461F76CFFF00B24976 /* DownloadAllShopsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadAllShopsInteractor.swift; sourceTree = "<group>"; };
 		CF1FAE481F76D05F00B24976 /* Shop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shop.swift; sourceTree = "<group>"; };
 		CF1FAE4A1F76D07700B24976 /* Shops.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shops.swift; sourceTree = "<group>"; };
@@ -171,6 +173,7 @@
 				CF1FAE501F77CBDD00B24976 /* MainViewController.swift */,
 				CF881B4F1F710B4D00F47554 /* ShopsViewController.swift */,
 				CF1FAE521F795AF300B24976 /* ShopsViewController+CollectionViewController.swift */,
+				CF165F141F7BFD0300AB3A97 /* ShopViewDetailController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -322,6 +325,7 @@
 			files = (
 				CF881B501F710B4D00F47554 /* ShopsViewController.swift in Sources */,
 				CF1FAE4B1F76D07700B24976 /* Shops.swift in Sources */,
+				CF165F151F7BFD0300AB3A97 /* ShopViewDetailController.swift in Sources */,
 				CF8E17901F7AA0B0004803F1 /* JSONParser.swift in Sources */,
 				CF1FAE471F76CFFF00B24976 /* DownloadAllShopsInteractor.swift in Sources */,
 				CF881B4E1F710B4D00F47554 /* AppDelegate.swift in Sources */,
