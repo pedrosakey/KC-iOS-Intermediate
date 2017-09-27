@@ -27,6 +27,8 @@
 		CF8E178D1F7A9DC7004803F1 /* DownloadAllShopsInteractorNSDataImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8E178C1F7A9DC7004803F1 /* DownloadAllShopsInteractorNSDataImp.swift */; };
 		CF8E17901F7AA0B0004803F1 /* JSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8E178F1F7AA0B0004803F1 /* JSONParser.swift */; };
 		CF8E17921F7AA0FF004803F1 /* DownloadAllShopsInteractorNSURLSessionImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8E17911F7AA0FF004803F1 /* DownloadAllShopsInteractorNSURLSessionImpl.swift */; };
+		CF8E17951F7AA425004803F1 /* String+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8E17941F7AA425004803F1 /* String+Image.swift */; };
+		CF8E17981F7BBF83004803F1 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF8E17971F7BBF83004803F1 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +66,8 @@
 		CF8E178C1F7A9DC7004803F1 /* DownloadAllShopsInteractorNSDataImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadAllShopsInteractorNSDataImp.swift; sourceTree = "<group>"; };
 		CF8E178F1F7AA0B0004803F1 /* JSONParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONParser.swift; sourceTree = "<group>"; };
 		CF8E17911F7AA0FF004803F1 /* DownloadAllShopsInteractorNSURLSessionImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadAllShopsInteractorNSURLSessionImpl.swift; sourceTree = "<group>"; };
+		CF8E17941F7AA425004803F1 /* String+Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Image.swift"; sourceTree = "<group>"; };
+		CF8E17971F7BBF83004803F1 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF8E17981F7BBF83004803F1 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,6 +118,7 @@
 				CF881B4C1F710B4D00F47554 /* MadridShopping */,
 				CF881B611F710B4D00F47554 /* MadridShoppingTests */,
 				CF881B4B1F710B4D00F47554 /* Products */,
+				CF8E17961F7BBF83004803F1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -129,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				CF881B4D1F710B4D00F47554 /* AppDelegate.swift */,
+				CF8E17931F7AA400004803F1 /* Util */,
 				CF1FAE441F76C82600B24976 /* Model */,
 				CF881B6D1F71195A00F47554 /* View */,
 				CF881B6E1F71196900F47554 /* Controller */,
@@ -186,6 +193,22 @@
 			path = JsonParser;
 			sourceTree = "<group>";
 		};
+		CF8E17931F7AA400004803F1 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				CF8E17941F7AA425004803F1 /* String+Image.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		CF8E17961F7BBF83004803F1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CF8E17971F7BBF83004803F1 /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -237,6 +260,11 @@
 					CF881B491F710B4D00F47554 = {
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					CF881B5D1F710B4D00F47554 = {
 						CreatedOnToolsVersion = 9.0;
@@ -298,6 +326,7 @@
 				CF1FAE471F76CFFF00B24976 /* DownloadAllShopsInteractor.swift in Sources */,
 				CF881B4E1F710B4D00F47554 /* AppDelegate.swift in Sources */,
 				CF1FAE491F76D05F00B24976 /* Shop.swift in Sources */,
+				CF8E17951F7AA425004803F1 /* String+Image.swift in Sources */,
 				CF1FAE4D1F76D4F200B24976 /* DownloadAllShopsInteractorFakeImpl.swift in Sources */,
 				CF1FAE531F795AF300B24976 /* ShopsViewController+CollectionViewController.swift in Sources */,
 				CF1FAE4F1F76D8DB00B24976 /* Typealias.swift in Sources */,

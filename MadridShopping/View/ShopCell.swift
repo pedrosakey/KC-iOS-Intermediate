@@ -19,5 +19,6 @@ class ShopCell: UICollectionViewCell {
         self.shop = shop
         
         self.label.text = shop.name
+        self.shop?.image.loadImage(into: imageView)
     }
 }
