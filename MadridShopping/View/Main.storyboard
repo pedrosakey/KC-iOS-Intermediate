@@ -155,7 +155,6 @@
                                                 <connections>
                                                     <outlet property="imageView" destination="vpv-TW-2nH" id="Cfp-ON-scy"/>
                                                     <outlet property="label" destination="37x-pM-vzD" id="YVd-Lw-0Oq"/>
-                                                    <segue destination="BA4-qc-XRt" kind="show" identifier="ShowShopDetailSegue" id="QVu-2b-byx"/>
                                                 </connections>
                                             </collectionViewCell>
                                         </cells>
@@ -177,6 +176,7 @@
                     </view>
                     <connections>
                         <outlet property="shopsCollectionView" destination="2je-Fv-zhS" id="abD-IL-H7j"/>
+                        <segue destination="BA4-qc-XRt" kind="show" identifier="ShowShopDetailSegue" id="9bG-1D-kOL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9wE-ol-CDw" userLabel="First Responder" sceneMemberID="firstResponder"/>
