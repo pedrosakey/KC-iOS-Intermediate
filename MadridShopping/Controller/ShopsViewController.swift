@@ -7,9 +7,11 @@
 //
 
 import UIKit
+import CoreData
 
 class ShopsViewController: UIViewController {
     
+    var context: NSManagedObjectContext!
     var shops: Shops?
     
     @IBOutlet weak var shopsCollectionView: UICollectionView!
@@ -17,7 +19,7 @@ class ShopsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let downloadShopsInteractor: DownloadAllShopsInteractor = DownloadAllShopsInteractorNSURLSessionImpl()
+        let downloadShopsInteractor: DownloadAllShopsInteractor = DownloadAllShopsInteractorNSDataImpl()
         
         downloadShopsInteractor.execute { (shops: Shops) in
             // todo OK
@@ -28,6 +30,10 @@ class ShopsViewController: UIViewController {
             
             self.shopsCollectionView.dataSource = self
             self.shopsCollectionView.delegate = self
+            
+            let cacheInteractor = SaveAllShopsInteractorImpl()
+            cacheInteractor.execute(shops: shops, context: self.context, onSuccess: { (shops: Shops) in
+            })
         }
     }
     

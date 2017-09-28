@@ -43,7 +43,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <segue destination="57p-x9-nCf" kind="show" id="7gP-Vj-RgW"/>
+                                            <segue destination="57p-x9-nCf" kind="show" identifier="ShowShopsSegue" id="7gP-Vj-RgW"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MOS-Me-YFx">
