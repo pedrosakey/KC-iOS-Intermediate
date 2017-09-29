@@ -22,7 +22,6 @@ func parseShops(data: Data) -> Shops {
             shop.logo = shopJson["logo_img"] as! String
             shop.image = shopJson["img"] as! String
             shop.description = shopJson["description_en"] as! String
-            
             shops.add(shop: shop)
         }
     } catch {

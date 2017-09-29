@@ -1,11 +1,3 @@
-//
-//  CoreDataStack.swift
-//  CoreDataHelloWorld
-//
-//  Created by Diego Freniche Brito on 13/09/2017.
-//  Copyright © 2017 Diego Freniche Brito. All rights reserved.
-//
-
 import CoreData
 
 public class CoreDataStack {
