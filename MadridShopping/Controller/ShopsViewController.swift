@@ -19,7 +19,7 @@ class ShopsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let downloadShopsInteractor: DownloadAllShopsInteractor = DownloadAllShopsInteractorNSDataImpl()
+        let downloadShopsInteractor: DownloadAllShopsInteractor = DownloadAllShopsInteractorNSURLSessionImpl()
         
         downloadShopsInteractor.execute { (shops: Shops) in
             // todo OK
