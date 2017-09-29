@@ -36,6 +36,10 @@
 		CF8E17951F7AA425004803F1 /* String+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8E17941F7AA425004803F1 /* String+Image.swift */; };
 		CF8E17981F7BBF83004803F1 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF8E17971F7BBF83004803F1 /* MapKit.framework */; };
 		CFF970C51F7EA992006D74DD /* MapShops.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF970C41F7EA6AD006D74DD /* MapShops.swift */; };
+		CFF970CA1F7EC686006D74DD /* SetExecuteOneInteractorImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF970C61F7EC684006D74DD /* SetExecuteOneInteractorImp.swift */; };
+		CFF970CB1F7EC686006D74DD /* ExecuteOnceInteractorImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF970C71F7EC684006D74DD /* ExecuteOnceInteractorImp.swift */; };
+		CFF970CC1F7EC686006D74DD /* SetExecuteOneInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF970C81F7EC685006D74DD /* SetExecuteOneInteractor.swift */; };
+		CFF970CD1F7EC686006D74DD /* ExecuteOnceInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF970C91F7EC685006D74DD /* ExecuteOnceInteractor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +86,10 @@
 		CF8E17941F7AA425004803F1 /* String+Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Image.swift"; sourceTree = "<group>"; };
 		CF8E17971F7BBF83004803F1 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		CFF970C41F7EA6AD006D74DD /* MapShops.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapShops.swift; sourceTree = "<group>"; };
+		CFF970C61F7EC684006D74DD /* SetExecuteOneInteractorImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetExecuteOneInteractorImp.swift; sourceTree = "<group>"; };
+		CFF970C71F7EC684006D74DD /* ExecuteOnceInteractorImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExecuteOnceInteractorImp.swift; sourceTree = "<group>"; };
+		CFF970C81F7EC685006D74DD /* SetExecuteOneInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetExecuteOneInteractor.swift; sourceTree = "<group>"; };
+		CFF970C91F7EC685006D74DD /* ExecuteOnceInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExecuteOnceInteractor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +134,10 @@
 				CF1FAE4E1F76D8DB00B24976 /* Typealias.swift */,
 				CF8E178C1F7A9DC7004803F1 /* DownloadAllShopsInteractorNSDataImp.swift */,
 				CF8E17911F7AA0FF004803F1 /* DownloadAllShopsInteractorNSURLSessionImpl.swift */,
+				CFF970C91F7EC685006D74DD /* ExecuteOnceInteractor.swift */,
+				CFF970C71F7EC684006D74DD /* ExecuteOnceInteractorImp.swift */,
+				CFF970C81F7EC685006D74DD /* SetExecuteOneInteractor.swift */,
+				CFF970C61F7EC684006D74DD /* SetExecuteOneInteractorImp.swift */,
 			);
 			path = Interactors;
 			sourceTree = "<group>";
@@ -360,13 +372,17 @@
 			files = (
 				CF881B501F710B4D00F47554 /* ShopsViewController.swift in Sources */,
 				CF1FAE4B1F76D07700B24976 /* Shops.swift in Sources */,
+				CFF970CB1F7EC686006D74DD /* ExecuteOnceInteractorImp.swift in Sources */,
 				CF165F151F7BFD0300AB3A97 /* ShopViewDetailController.swift in Sources */,
 				CF4706731F7D4B8D00A4CD5B /* SaveAllShopsInteractor.swift in Sources */,
 				CF8E17901F7AA0B0004803F1 /* JSONParser.swift in Sources */,
 				CF1FAE471F76CFFF00B24976 /* DownloadAllShopsInteractor.swift in Sources */,
 				CF4706751F7D4BA700A4CD5B /* SaveAllShopsInteractorImpl.swift in Sources */,
 				CF881B4E1F710B4D00F47554 /* AppDelegate.swift in Sources */,
+				CFF970CD1F7EC686006D74DD /* ExecuteOnceInteractor.swift in Sources */,
+				CFF970CA1F7EC686006D74DD /* SetExecuteOneInteractorImp.swift in Sources */,
 				CFF970C51F7EA992006D74DD /* MapShops.swift in Sources */,
+				CFF970CC1F7EC686006D74DD /* SetExecuteOneInteractor.swift in Sources */,
 				CF1FAE491F76D05F00B24976 /* Shop.swift in Sources */,
 				CF8E17951F7AA425004803F1 /* String+Image.swift in Sources */,
 				CF1FAE4D1F76D4F200B24976 /* DownloadAllShopsInteractorFakeImpl.swift in Sources */,
