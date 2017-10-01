@@ -22,6 +22,8 @@ func parseShops(data: Data) -> Shops {
             shop.logo = shopJson["logo_img"] as! String
             shop.image = shopJson["img"] as! String
             shop.description = shopJson["description_en"] as! String
+            shop.latitude = Float((shopJson["gps_lat"] as! String).trimmingCharacters(in:.whitespaces))
+            shop.longitude = Float((shopJson["gps_lon"] as! String).trimmingCharacters(in:.whitespaces))
             shops.add(shop: shop)
         }
     } catch {

@@ -1,18 +1,47 @@
 import UIKit
 import CoreData
+import MapKit
+import CoreLocation
 
 
-class ShopsViewController: UIViewController{
+class ShopsViewController: UIViewController {
     
     var context: NSManagedObjectContext!
     var shops: Shops?
     
     @IBOutlet weak var shopsCollectionView: UICollectionView!
+    @IBOutlet weak var map: MKMapView!
+    
+    let locationManager = CLLocationManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //Request Authorizacion
+        self.locationManager.requestWhenInUseAuthorization()
         
-      
+       
+        //Pin a Map
+        self.map.delegate = self
+        
+        
+        //Location latitude & longitude
+        let madridLocation = CLLocation(latitude: 40.416775, longitude: -3.703790)
+        self.map.setCenter(madridLocation.coordinate, animated: true)
+        
+        //zoom
+        let region = MKCoordinateRegion(center: madridLocation.coordinate, span: MKCoordinateSpan(latitudeDelta: 1, longitudeDelta: 1))
+        let reg = self.map.regionThatFits(region)
+        self.map.setRegion(reg, animated: true)
+        
+        
+        //Add anotation
+        let mapPin = MapPin(coordinate: madridLocation.coordinate)
+        mapPin.title = "titutlo"
+        mapPin.subtitle = "subtittitio"
+        
+        self.map.addAnnotation(mapPin)
+        
+       
         
         let downloadShopsInteractor: DownloadAllShopsInteractor = DownloadAllShopsInteractorNSURLSessionImpl()
         
@@ -20,7 +49,9 @@ class ShopsViewController: UIViewController{
             downloadShopsInteractor.execute(onSuccess: { (shops: Shops) in
                     //Network connection ok
                     self.shops = shops
-                    
+                    self.addMapAnotation()
+
+                
                     let cacheInteractor = SaveAllShopsInteractorImpl()
                     cacheInteractor.execute(shops: shops, context: self.context, onSuccess: { (shops: Shops) in
                         SetExecuteOneInteractorImp().execute()
@@ -43,11 +74,19 @@ class ShopsViewController: UIViewController{
             self.shopsCollectionView.delegate = self
             self.shopsCollectionView.dataSource = self
         }
+    
+    //MARK: Inline func
+    
+    
+    func  addMapAnotation(){
+       
         
+        
+    }
         
         
       
-        
+    //MARK: CollectionView
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
         let shopCD = self.fetchedResultsController.object(at: indexPath)

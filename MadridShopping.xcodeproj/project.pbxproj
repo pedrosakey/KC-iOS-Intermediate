@@ -40,6 +40,8 @@
 		CFF970CB1F7EC686006D74DD /* ExecuteOnceInteractorImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF970C71F7EC684006D74DD /* ExecuteOnceInteractorImp.swift */; };
 		CFF970CC1F7EC686006D74DD /* SetExecuteOneInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF970C81F7EC685006D74DD /* SetExecuteOneInteractor.swift */; };
 		CFF970CD1F7EC686006D74DD /* ExecuteOnceInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF970C91F7EC685006D74DD /* ExecuteOnceInteractor.swift */; };
+		CFF970CF1F7FEE06006D74DD /* MapPin.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF970CE1F7FEE06006D74DD /* MapPin.swift */; };
+		CFF970D11F7FEE83006D74DD /* ShopsViewController+MapViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF970D01F7FEE83006D74DD /* ShopsViewController+MapViewDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +92,8 @@
 		CFF970C71F7EC684006D74DD /* ExecuteOnceInteractorImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExecuteOnceInteractorImp.swift; sourceTree = "<group>"; };
 		CFF970C81F7EC685006D74DD /* SetExecuteOneInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetExecuteOneInteractor.swift; sourceTree = "<group>"; };
 		CFF970C91F7EC685006D74DD /* ExecuteOnceInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExecuteOnceInteractor.swift; sourceTree = "<group>"; };
+		CFF970CE1F7FEE06006D74DD /* MapPin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPin.swift; sourceTree = "<group>"; };
+		CFF970D01F7FEE83006D74DD /* ShopsViewController+MapViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ShopsViewController+MapViewDelegate.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,6 +204,7 @@
 				CF881B791F7149EA00F47554 /* Main.storyboard */,
 				CF881B561F710B4D00F47554 /* LaunchScreen.storyboard */,
 				CF1FAE541F795F3E00B24976 /* ShopCell.swift */,
+				CFF970CE1F7FEE06006D74DD /* MapPin.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -211,6 +216,7 @@
 				CF881B4F1F710B4D00F47554 /* ShopsViewController.swift */,
 				CF1FAE521F795AF300B24976 /* ShopsViewController+CollectionViewController.swift */,
 				CF165F141F7BFD0300AB3A97 /* ShopViewDetailController.swift */,
+				CFF970D01F7FEE83006D74DD /* ShopsViewController+MapViewDelegate.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -371,6 +377,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF881B501F710B4D00F47554 /* ShopsViewController.swift in Sources */,
+				CFF970CF1F7FEE06006D74DD /* MapPin.swift in Sources */,
 				CF1FAE4B1F76D07700B24976 /* Shops.swift in Sources */,
 				CFF970CB1F7EC686006D74DD /* ExecuteOnceInteractorImp.swift in Sources */,
 				CF165F151F7BFD0300AB3A97 /* ShopViewDetailController.swift in Sources */,
@@ -388,6 +395,7 @@
 				CF1FAE4D1F76D4F200B24976 /* DownloadAllShopsInteractorFakeImpl.swift in Sources */,
 				CF1FAE531F795AF300B24976 /* ShopsViewController+CollectionViewController.swift in Sources */,
 				CF1FAE4F1F76D8DB00B24976 /* Typealias.swift in Sources */,
+				CFF970D11F7FEE83006D74DD /* ShopsViewController+MapViewDelegate.swift in Sources */,
 				CF8E17921F7AA0FF004803F1 /* DownloadAllShopsInteractorNSURLSessionImpl.swift in Sources */,
 				CF4706701F7D3FF200A4CD5B /* CoreDataStack.swift in Sources */,
 				CF47066E1F7D3AD000A4CD5B /* MadridShopping.xcdatamodeld in Sources */,
@@ -475,7 +483,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -526,7 +534,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";

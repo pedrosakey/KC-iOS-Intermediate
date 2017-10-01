@@ -1,12 +1,5 @@
-//
-//  MapShops.swift
-//  MadridShops
-//
-//  Created by Pedro Sánchez Castro on 18/9/17.
-//  Copyright © 2017 Pedro Sánchez Castro. All rights reserved.
-//
-
 import CoreData
+import CoreLocation
 
  func mapShopCDIntoShop(shopCD: ShopCD) -> Shop {
     
@@ -38,4 +31,14 @@ import CoreData
     shopCD.description_en = shop.description
     
     return shopCD
+}
+
+func mapShopIntoMapPin(shop: Shop) -> MapPin? {
+    guard let latitude = shop.latitude else { return nil }
+    guard let longitude = shop.longitude else { return nil }
+    
+    let shopLocation : CLLocation = CLLocation(latitude: CLLocationDegrees(latitude), longitude: CLLocationDegrees(longitude))
+    let shopMapPin = MapPin(coordinate: shopLocation.coordinate, title: shop.name, subtitle: shop.openingHours)
+   
+    return shopMapPin
 }

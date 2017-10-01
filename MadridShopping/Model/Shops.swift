@@ -14,7 +14,7 @@ public protocol ShopsProtocol {
     func get(index: Int) -> Shop
 }
 
-public class Shops: ShopsProtocol {
+public class Shops: ShopsProtocol{
     private var shopsList: [Shop]?
     
     public init() {
