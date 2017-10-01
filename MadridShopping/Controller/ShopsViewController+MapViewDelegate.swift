@@ -9,7 +9,8 @@ extension ShopsViewController: MKMapViewDelegate {
         // MORE anotations
         let shopCds = self.fetchAllShops()
         //Add pin to Maps
-        let shopcd : ShopCD = shopCds[0]
+       // let shopcd : ShopCD = shopCds[0]
+        for shopcd in shopCds {
         print("name " + shopcd.name!)
         print("latitude: \(shopcd.latitude)")
         print("longitude: \(shopcd.longitude)")
@@ -18,8 +19,10 @@ extension ShopsViewController: MKMapViewDelegate {
              if(mapPin != nil){
              self.map.addAnnotation(mapPin!)
         }
+        }
         
     }
+    
     
     func fetchAllShops () -> [ShopCD] {
         var shopCDs : [ShopCD] = []
@@ -47,5 +50,6 @@ extension ShopsViewController: MKMapViewDelegate {
         
         return shopCDs
     }
+   
     
 }

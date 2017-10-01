@@ -7,7 +7,6 @@ import CoreLocation
 class ShopsViewController: UIViewController {
     
     var context: NSManagedObjectContext!
-    var shops: Shops?
     
     @IBOutlet weak var shopsCollectionView: UICollectionView!
     @IBOutlet weak var map: MKMapView!
@@ -19,67 +18,50 @@ class ShopsViewController: UIViewController {
         //Request Authorizacion
         self.locationManager.requestWhenInUseAuthorization()
         
-       
         //Pin a Map
         self.map.delegate = self
         
-        
-        //Location latitude & longitude
+        //Location & Center
         let madridLocation = CLLocation(latitude: 40.416775, longitude: -3.703790)
         self.map.setCenter(madridLocation.coordinate, animated: true)
         
-        //zoom
-        let region = MKCoordinateRegion(center: madridLocation.coordinate, span: MKCoordinateSpan(latitudeDelta: 1, longitudeDelta: 1))
+        //Zoom
+        let region = MKCoordinateRegion(center: madridLocation.coordinate, span: MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1))
         let reg = self.map.regionThatFits(region)
         self.map.setRegion(reg, animated: true)
-        
-        
-        //Add anotation
-        let mapPin = MapPin(coordinate: madridLocation.coordinate)
-        mapPin.title = "titutlo"
-        mapPin.subtitle = "subtittitio"
-        
-        self.map.addAnnotation(mapPin)
-        
        
-        
-        let downloadShopsInteractor: DownloadAllShopsInteractor = DownloadAllShopsInteractorNSURLSessionImpl()
-        
+       // Download all shops once
         ExecuteOnceInteractorImp().execute {
-            downloadShopsInteractor.execute(onSuccess: { (shops: Shops) in
-                    //Network connection ok
-                    self.shops = shops
-                    self.addMapAnotation()
-
-                
-                    let cacheInteractor = SaveAllShopsInteractorImpl()
-                    cacheInteractor.execute(shops: shops, context: self.context, onSuccess: { (shops: Shops) in
-                        SetExecuteOneInteractorImp().execute()
-                        
-                        self._fetchedResultsController = nil
-                        self.shopsCollectionView.dataSource = self
-                        self.shopsCollectionView.delegate = self
-                        self.shopsCollectionView.reloadData()
-
-                    })
-                }) { (error) in
-                    //Network connection ko
-                    print("💩 Error \(error.localizedDescription)")
-                    self.shopsCollectionView.dataSource = self
-                    self.shopsCollectionView.delegate = self
-                }
-                
-            }
+               inicialize()
+        }
         
-            self.shopsCollectionView.delegate = self
-            self.shopsCollectionView.dataSource = self
+        self.shopsCollectionView.dataSource = self
+        self.shopsCollectionView.delegate = self
+        
         }
     
     //MARK: Inline func
-    
-    
-    func  addMapAnotation(){
-       
+    func  inicialize(){
+        
+        let downloadShopsInteractor: DownloadAllShopsInteractor = DownloadAllShopsInteractorNSURLSessionImpl()
+        
+        downloadShopsInteractor.execute(onSuccess: { (shops: Shops) in
+            //Network connection ok
+            SetExecuteOneInteractorImp().execute()
+            let cacheInteractor = SaveAllShopsInteractorImpl()
+            cacheInteractor.execute(shops: shops, context: self.context, onSuccess: { (shops: Shops) in
+                self._fetchedResultsController = nil
+                self.shopsCollectionView.dataSource = self
+                self.shopsCollectionView.delegate = self
+                self.shopsCollectionView.reloadData()
+                
+            })
+        }) { (error) in
+            //Network connection ko
+            print("💩 Error \(error.localizedDescription)")
+            self.shopsCollectionView.dataSource = self
+            self.shopsCollectionView.delegate = self
+        }
         
         
     }
