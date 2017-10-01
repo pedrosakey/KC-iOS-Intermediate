@@ -11,6 +11,9 @@ class ShopsViewController: UIViewController {
     @IBOutlet weak var shopsCollectionView: UICollectionView!
     @IBOutlet weak var map: MKMapView!
     
+    weak var delegate: MainViewController!
+
+    
     let locationManager = CLLocationManager()
     
     override func viewDidLoad() {
@@ -59,8 +62,20 @@ class ShopsViewController: UIViewController {
         }) { (error) in
             //Network connection ko
             print("💩 Error \(error.localizedDescription)")
+            
+            //pop
+            self.navigationController?.popViewController(animated: true)
+            
+            //Error Message
+            let alert = UIAlertController(title: "Network Error", message: "Network error", preferredStyle: UIAlertControllerStyle.alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+            self.present(alert, animated: true){}
+            
+
+            //There are Data
             self.shopsCollectionView.dataSource = self
             self.shopsCollectionView.delegate = self
+            
         }
         
         
