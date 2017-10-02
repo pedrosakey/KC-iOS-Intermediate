@@ -14,14 +14,9 @@ class ShopsViewController: UIViewController {
     weak var delegate: MainViewController!
 
     
-    let locationManager = CLLocationManager()
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        //Request Authorizacion
-        self.locationManager.requestWhenInUseAuthorization()
         
-        //Pin a Map
         self.map.delegate = self
         
         //Location & Center

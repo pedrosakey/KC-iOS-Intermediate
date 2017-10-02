@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import CoreLocation
 
 public class Shop {
     var name: String
@@ -21,4 +22,18 @@ public class Shop {
     public init(name: String) {
         self.name = name
     }
+}
+
+extension Shop {
+    func getLocation() -> CLLocation {
+        
+        var shopLocation = CLLocation()
+        
+        guard let latitude = self.latitude else { return shopLocation }
+        guard let longitude = self.longitude else { return shopLocation }
+        
+         shopLocation = CLLocation(latitude: CLLocationDegrees(latitude), longitude: CLLocationDegrees(longitude))
+        return shopLocation
+        
+}
 }

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13189.4" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7sM-xu-HjK">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -21,17 +21,17 @@
             <objects>
                 <viewController storyboardIdentifier="MS" title="Madrid Shopping" id="BYZ-38-t0r" customClass="MainViewController" customModule="MadridShopping" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleAspectFit" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Hys-8E-ynz">
-                                <rect key="frame" x="80" y="80" width="220" height="304"/>
+                                <rect key="frame" x="80" y="80" width="259" height="373"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo-ms.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="NZv-pn-4rI">
-                                        <rect key="frame" x="0.0" y="0.0" width="220" height="220"/>
+                                        <rect key="frame" x="19.666666666666686" y="0.0" width="220" height="220"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Eo-A4-mJu">
-                                        <rect key="frame" x="0.0" y="228" width="220" height="34"/>
+                                        <rect key="frame" x="0.0" y="228.00000000000003" width="259" height="68.666666666666714"/>
                                         <color key="backgroundColor" red="1" green="0.4941176471" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <rect key="contentStretch" x="0.0" y="1" width="1" height="1"/>
                                         <state key="normal" title="Shops">
@@ -48,7 +48,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MOS-Me-YFx">
-                                        <rect key="frame" x="0.0" y="270" width="220" height="34"/>
+                                        <rect key="frame" x="0.0" y="304.66666666666674" width="259" height="68.333333333333314"/>
                                         <color key="backgroundColor" red="1" green="0.4941176471" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <rect key="contentStretch" x="0.0" y="1" width="1" height="1"/>
                                         <state key="normal" title="Activities">
@@ -72,7 +72,7 @@
                                 </constraints>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Erro de conexion" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tr2-4g-gHh">
-                                <rect key="frame" x="0.0" y="447" width="375" height="220"/>
+                                <rect key="frame" x="0.0" y="516" width="414" height="220"/>
                                 <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="tintColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -112,7 +112,7 @@
             <objects>
                 <viewController title="Activities" id="2tu-rB-6f3" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bgM-fO-bKa">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vp8-Zn-Xrx">
@@ -134,17 +134,17 @@
             <objects>
                 <viewController title="Shops" id="57p-x9-nCf" customClass="ShopsViewController" customModule="MadridShopping" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xGh-H2-pPO">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="k9t-nT-a1M">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="64" width="414" height="672"/>
                                 <subviews>
-                                    <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" showsScale="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xQl-Mg-qXf">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="301.5"/>
+                                    <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsScale="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xQl-Mg-qXf">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="336"/>
                                     </mapView>
                                     <view hidden="YES" autoresizesSubviews="NO" clipsSubviews="YES" contentMode="scaleAspectFit" semanticContentAttribute="spatial" translatesAutoresizingMaskIntoConstraints="NO" id="lB0-Or-KQE">
-                                        <rect key="frame" x="0.0" y="301.5" width="375" height="0.0"/>
+                                        <rect key="frame" x="0.0" y="336" width="414" height="0.0"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Error" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q0h-Bf-Gka">
                                                 <rect key="frame" x="102" y="94" width="133" height="58"/>
@@ -157,7 +157,7 @@
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="2je-Fv-zhS">
-                                        <rect key="frame" x="0.0" y="301.5" width="375" height="301.5"/>
+                                        <rect key="frame" x="0.0" y="336" width="414" height="336"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="NYh-sK-h6I">
                                             <size key="itemSize" width="359" height="67"/>
@@ -167,7 +167,7 @@
                                         </collectionViewFlowLayout>
                                         <cells>
                                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ShopCell" id="jTs-FS-TX5" customClass="ShopCell" customModule="MadridShopping" customModuleProvider="target">
-                                                <rect key="frame" x="8" y="0.0" width="359" height="67"/>
+                                                <rect key="frame" x="27.666666666666668" y="0.0" width="359" height="67"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                                     <rect key="frame" x="0.0" y="0.0" width="359" height="67"/>
@@ -224,7 +224,7 @@
             <objects>
                 <navigationController hidesBarsOnSwipe="YES" id="7sM-xu-HjK" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="fiF-tx-XgO">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="KBA-eo-O47">
@@ -243,55 +243,82 @@
             <objects>
                 <viewController id="BA4-qc-XRt" customClass="ShopViewDetailController" customModule="MadridShopping" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Pdo-fO-DJm">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="It's a speciali shop located in Madrid city center from 1916. You can find all the things that you love." textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="gJQ-1k-p40">
-                                <rect key="frame" x="16" y="387" width="291" height="104"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Open Tuesday to Suturday" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eYP-a8-Lmd">
-                                <rect key="frame" x="0.0" y="537" width="375" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Calle Jorge Juan" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NmY-ti-0iq">
-                                <rect key="frame" x="0.0" y="576" width="375" height="52"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="jZI-Wh-Spe">
-                                <rect key="frame" x="0.0" y="64" width="375" height="226"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </mapView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Antiguedades Serrano" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K5l-cW-QrJ">
-                                <rect key="frame" x="-27" y="316" width="375" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="28"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="Bli-2A-cjr">
+                                <rect key="frame" x="0.0" y="64" width="414.33333333333331" height="672"/>
+                                <subviews>
+                                    <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jZI-Wh-Spe">
+                                        <rect key="frame" x="0.0" y="0.0" width="414.33333333333331" height="224.33333333333331"/>
+                                    </mapView>
+                                    <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="fillEqually" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Yzc-8P-HH6" userLabel="Stack View texts">
+                                        <rect key="frame" x="0.0" y="224.33333333333329" width="414.33333333333331" height="223.66666666666671"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Antiguedades Serrano" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K5l-cW-QrJ">
+                                                <rect key="frame" x="0.0" y="0.0" width="414.33333333333331" height="61.333333333333371"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="28"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Open Tuesday to Suturday" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eYP-a8-Lmd">
+                                                <rect key="frame" x="105.66666666666669" y="81.333333333333371" width="203" height="61"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calle Jorge Juan" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NmY-ti-0iq">
+                                                <rect key="frame" x="143.66666666666663" y="162.33333333333337" width="127.33333333333337" height="61.333333333333314"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="K5l-cW-QrJ" firstAttribute="width" secondItem="Yzc-8P-HH6" secondAttribute="width" id="zL9-Hn-ywT"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="lxF-cD-Dqn">
+                                        <rect key="frame" x="0.0" y="448" width="414.33333333333331" height="224"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Descriptionnn" textAlignment="justified" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uXV-mM-nJr" userLabel="Shop Detail Description">
+                                                <rect key="frame" x="0.0" y="0.0" width="414.33333333333331" height="224"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="lxF-cD-Dqn" firstAttribute="height" secondItem="Yzc-8P-HH6" secondAttribute="height" id="8De-NZ-Kju"/>
+                                    <constraint firstItem="lxF-cD-Dqn" firstAttribute="width" secondItem="Yzc-8P-HH6" secondAttribute="width" id="DdG-I3-8G7"/>
+                                    <constraint firstItem="jZI-Wh-Spe" firstAttribute="height" secondItem="Yzc-8P-HH6" secondAttribute="height" id="fO1-mb-OOF"/>
+                                    <constraint firstItem="jZI-Wh-Spe" firstAttribute="width" secondItem="Bli-2A-cjr" secondAttribute="width" id="xbO-mE-dM2"/>
+                                    <constraint firstItem="Yzc-8P-HH6" firstAttribute="width" secondItem="Bli-2A-cjr" secondAttribute="width" id="zml-Vy-WOE"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Bli-2A-cjr" firstAttribute="leading" secondItem="1WF-gE-XB3" secondAttribute="leading" id="Dlg-3T-bOm"/>
+                            <constraint firstItem="1WF-gE-XB3" firstAttribute="bottom" secondItem="Bli-2A-cjr" secondAttribute="bottom" id="WDC-2r-S14"/>
+                            <constraint firstItem="Bli-2A-cjr" firstAttribute="trailing" secondItem="1WF-gE-XB3" secondAttribute="trailing" constant="0.33333333333331439" id="r6s-TH-tXq"/>
+                            <constraint firstItem="Bli-2A-cjr" firstAttribute="top" secondItem="1WF-gE-XB3" secondAttribute="top" id="y6O-7c-xsb"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="1WF-gE-XB3"/>
                     </view>
                     <connections>
+                        <outlet property="mapViewDetail" destination="jZI-Wh-Spe" id="VRU-9j-YYb"/>
                         <outlet property="shopDetaiName" destination="K5l-cW-QrJ" id="5ra-Fy-xMW"/>
                         <outlet property="shopDetailAddress" destination="NmY-ti-0iq" id="zqH-tl-CG8"/>
-                        <outlet property="shopDetailDescription" destination="gJQ-1k-p40" id="bBZ-rJ-dbp"/>
+                        <outlet property="shopDetailDescription" destination="uXV-mM-nJr" id="scs-an-eqa"/>
                         <outlet property="shopDetailOpeningHours" destination="eYP-a8-Lmd" id="JaY-O8-c9k"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LNh-xm-hcc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2306.4000000000001" y="297.30134932533736"/>
+            <point key="canvasLocation" x="-2307.2463768115945" y="296.73913043478262"/>
         </scene>
     </scenes>
     <resources>
