@@ -23,6 +23,7 @@
 		CF4706701F7D3FF200A4CD5B /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF47066F1F7D3FF200A4CD5B /* CoreDataStack.swift */; };
 		CF4706731F7D4B8D00A4CD5B /* SaveAllShopsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4706721F7D4B8D00A4CD5B /* SaveAllShopsInteractor.swift */; };
 		CF4706751F7D4BA700A4CD5B /* SaveAllShopsInteractorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4706741F7D4BA700A4CD5B /* SaveAllShopsInteractorImpl.swift */; };
+		CF5B58BD1F83D9F700307AEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF5B58BF1F83D9F700307AEC /* Main.storyboard */; };
 		CF881B4E1F710B4D00F47554 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF881B4D1F710B4D00F47554 /* AppDelegate.swift */; };
 		CF881B501F710B4D00F47554 /* ShopsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF881B4F1F710B4D00F47554 /* ShopsViewController.swift */; };
 		CF881B551F710B4D00F47554 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF881B541F710B4D00F47554 /* Assets.xcassets */; };
@@ -31,7 +32,6 @@
 		CF881B761F71473800F47554 /* sample-map-DetailShopViewController.png in Resources */ = {isa = PBXBuildFile; fileRef = CF881B731F7135CA00F47554 /* sample-map-DetailShopViewController.png */; };
 		CF881B771F71473800F47554 /* sample-map-ShopsViewController.png in Resources */ = {isa = PBXBuildFile; fileRef = CF881B741F7135CA00F47554 /* sample-map-ShopsViewController.png */; };
 		CF881B781F71473800F47554 /* logo-ms.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CF881B701F711CBC00F47554 /* logo-ms.jpeg */; };
-		CF881B7A1F7149EA00F47554 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF881B791F7149EA00F47554 /* Main.storyboard */; };
 		CF8E178D1F7A9DC7004803F1 /* DownloadAllShopsInteractorNSDataImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8E178C1F7A9DC7004803F1 /* DownloadAllShopsInteractorNSDataImp.swift */; };
 		CF8E17901F7AA0B0004803F1 /* JSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8E178F1F7AA0B0004803F1 /* JSONParser.swift */; };
 		CF8E17921F7AA0FF004803F1 /* DownloadAllShopsInteractorNSURLSessionImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8E17911F7AA0FF004803F1 /* DownloadAllShopsInteractorNSURLSessionImpl.swift */; };
@@ -76,6 +76,9 @@
 		CF47066F1F7D3FF200A4CD5B /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		CF4706721F7D4B8D00A4CD5B /* SaveAllShopsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveAllShopsInteractor.swift; sourceTree = "<group>"; };
 		CF4706741F7D4BA700A4CD5B /* SaveAllShopsInteractorImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveAllShopsInteractorImpl.swift; sourceTree = "<group>"; };
+		CF5B58BE1F83D9F700307AEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CF5B58C01F83DA5D00307AEC /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
+		CF5B58C11F83DA5D00307AEC /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		CF881B4A1F710B4D00F47554 /* MadridShopping.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MadridShopping.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF881B4D1F710B4D00F47554 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CF881B4F1F710B4D00F47554 /* ShopsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopsViewController.swift; sourceTree = "<group>"; };
@@ -88,7 +91,6 @@
 		CF881B701F711CBC00F47554 /* logo-ms.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "logo-ms.jpeg"; sourceTree = "<group>"; };
 		CF881B731F7135CA00F47554 /* sample-map-DetailShopViewController.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sample-map-DetailShopViewController.png"; sourceTree = "<group>"; };
 		CF881B741F7135CA00F47554 /* sample-map-ShopsViewController.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sample-map-ShopsViewController.png"; sourceTree = "<group>"; };
-		CF881B791F7149EA00F47554 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		CF8E178C1F7A9DC7004803F1 /* DownloadAllShopsInteractorNSDataImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadAllShopsInteractorNSDataImp.swift; sourceTree = "<group>"; };
 		CF8E178F1F7AA0B0004803F1 /* JSONParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONParser.swift; sourceTree = "<group>"; };
 		CF8E17911F7AA0FF004803F1 /* DownloadAllShopsInteractorNSURLSessionImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadAllShopsInteractorNSURLSessionImpl.swift; sourceTree = "<group>"; };
@@ -223,7 +225,7 @@
 		CF881B6D1F71195A00F47554 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				CF881B791F7149EA00F47554 /* Main.storyboard */,
+				CF5B58BF1F83D9F700307AEC /* Main.storyboard */,
 				CF881B561F710B4D00F47554 /* LaunchScreen.storyboard */,
 				CF1FAE541F795F3E00B24976 /* ShopCell.swift */,
 				CFF970CE1F7FEE06006D74DD /* MapPin.swift */,
@@ -386,7 +388,7 @@
 				CF881B761F71473800F47554 /* sample-map-DetailShopViewController.png in Resources */,
 				CF881B771F71473800F47554 /* sample-map-ShopsViewController.png in Resources */,
 				CF881B781F71473800F47554 /* logo-ms.jpeg in Resources */,
-				CF881B7A1F7149EA00F47554 /* Main.storyboard in Resources */,
+				CF5B58BD1F83D9F700307AEC /* Main.storyboard in Resources */,
 				CF881B581F710B4D00F47554 /* LaunchScreen.storyboard in Resources */,
 				CF881B551F710B4D00F47554 /* Assets.xcassets in Resources */,
 			);
@@ -556,10 +558,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		CF5B58BF1F83D9F700307AEC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF5B58BE1F83D9F700307AEC /* Base */,
+				CF5B58C01F83DA5D00307AEC /* es */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
 		CF881B561F710B4D00F47554 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				CF881B571F710B4D00F47554 /* Base */,
+				CF5B58C11F83DA5D00307AEC /* es */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -571,6 +583,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -628,6 +641,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

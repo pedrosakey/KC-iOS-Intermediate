@@ -1,0 +1,39 @@
+
+/* Class = "UIViewController"; title = "Activities"; ObjectID = "2tu-rB-6f3"; */
+"2tu-rB-6f3.title" = "Actividades";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "37x-pM-vzD"; */
+"37x-pM-vzD.text" = "Label";
+
+/* Class = "UIViewController"; title = "Shops"; ObjectID = "57p-x9-nCf"; */
+"57p-x9-nCf.title" = "Tiendas";
+
+/* Class = "UIButton"; normalTitle = "Shops"; ObjectID = "7Eo-A4-mJu"; */
+"7Eo-A4-mJu.normalTitle" = "Tiendas";
+
+/* Class = "UIViewController"; title = "Madrid Shopping"; ObjectID = "BYZ-38-t0r"; */
+"BYZ-38-t0r.title" = "Madrid Shopping";
+
+/* Class = "UINavigationItem"; title = "MS"; ObjectID = "ELu-if-Biq"; */
+"ELu-if-Biq.title" = "MS";
+
+/* Class = "UILabel"; text = "Antiguedades Serrano"; ObjectID = "K5l-cW-QrJ"; */
+"K5l-cW-QrJ.text" = "Antiguedades Serrano";
+
+/* Class = "UIButton"; normalTitle = "Activities"; ObjectID = "MOS-Me-YFx"; */
+"MOS-Me-YFx.normalTitle" = "Actividades";
+
+/* Class = "UILabel"; text = "Calle Jorge Juan"; ObjectID = "NmY-ti-0iq"; */
+"NmY-ti-0iq.text" = "Calle Jorge Juan";
+
+/* Class = "UILabel"; text = "Error"; ObjectID = "Q0h-Bf-Gka"; */
+"Q0h-Bf-Gka.text" = "Error";
+
+/* Class = "UILabel"; text = "Open Tuesday to Suturday"; ObjectID = "eYP-a8-Lmd"; */
+"eYP-a8-Lmd.text" = "Open Tuesday to Suturday";
+
+/* Class = "UILabel"; text = "Descriptionnn"; ObjectID = "uXV-mM-nJr"; */
+"uXV-mM-nJr.text" = "Descriptionnn";
+
+/* Class = "UIButton"; normalTitle = "Go to detail"; ObjectID = "vp8-Zn-Xrx"; */
+"vp8-Zn-Xrx.normalTitle" = "Go to detail";
