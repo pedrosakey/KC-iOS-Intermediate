@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 class ShopCell: UICollectionViewCell {
     var shop: Shop?
     
@@ -19,6 +20,6 @@ class ShopCell: UICollectionViewCell {
         self.shop = shop
         
         self.label.text = shop.name
-        self.shop?.logo.loadImage(into: imageView)
+        self.shop?.logo.loadImageCache(into: imageView)
     }
 }

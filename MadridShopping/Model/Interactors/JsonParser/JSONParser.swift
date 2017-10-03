@@ -8,10 +8,9 @@
 
 import Foundation
 
-import Foundation
-
 func parseShops(data: Data) -> Shops {
     let shops = Shops()
+    
     do {
         let jsonObject = try JSONSerialization.jsonObject(with: data, options: JSONSerialization.ReadingOptions.allowFragments) as! Dictionary<String, Any>
         let result = jsonObject["result"] as! [Dictionary<String, Any>]
