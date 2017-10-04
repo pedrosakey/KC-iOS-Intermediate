@@ -1,11 +1,3 @@
-//
-//  SaveAllShopsInteractor.swift
-//  MadridShopping
-//
-//  Created by Pedro Sánchez Castro on 28/9/17.
-//  Copyright © 2017 pedrosapro. All rights reserved.
-//
-
 import CoreData
 
 protocol SaveAllShopsInteractor {

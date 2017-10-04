@@ -1,11 +1,3 @@
-//
-//  AppDelegate.swift
-//  MadridShopping
-//
-//  Created by Pedro Sánchez Castro on 19/9/17.
-//  Copyright © 2017 pedrosapro. All rights reserved.
-//
-
 import UIKit
 import CoreData
 
@@ -17,6 +9,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var context: NSManagedObjectContext?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        
+        //prueba quitar
+        DownloadAllActivitiesInteractorImpl().execute { (activities: Activities) in
+           
+            print("****************")
+           print(activities.get(index: 0).name)
+            
+            for i in 0...activities.count() {
+                print("Activitity \(activities.get(index: i).name)")
+            }
+            
+        }
         
         self.context = cds.createContainer(dbName: "MadridShopping").viewContext
         

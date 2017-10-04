@@ -1,11 +1,3 @@
-//
-//  JSONParser.swift
-//  MadridShopping
-//
-//  Created by Pedro Sánchez Castro on 26/9/17.
-//  Copyright © 2017 pedrosapro. All rights reserved.
-//
-
 import Foundation
 
 func parseShops(data: Data) -> Shops {
@@ -31,3 +23,28 @@ func parseShops(data: Data) -> Shops {
     }
     return shops
 }
+
+func parseActivities(data: Data) -> Activities {
+    let activities = Activities()
+    
+    do {
+        let jsonObject = try JSONSerialization.jsonObject(with: data, options: JSONSerialization.ReadingOptions.allowFragments) as! Dictionary<String, Any>
+        let result = jsonObject["result"] as! [Dictionary<String, Any>]
+        
+        for activityJson in result {
+            let activity = Activity(name: activityJson["name"]! as! String)
+            activity.address = activityJson["address"]! as! String
+            activity.logo = activityJson["logo_img"] as! String
+            activity.image = activityJson["img"] as! String
+            activity.description = activityJson["description_en"] as! String
+            activity.openingHours = activityJson["opening_hours_en"] as! String
+            activity.latitude = Float((activityJson["gps_lat"] as! String).trimmingCharacters(in:.whitespaces))
+            activity.longitude = Float((activityJson["gps_lon"] as! String).trimmingCharacters(in:.whitespaces))
+            activities.add(activity: activity)
+        }
+    } catch {
+        print("Error parsing JSON")
+    }
+    return activities
+}
+

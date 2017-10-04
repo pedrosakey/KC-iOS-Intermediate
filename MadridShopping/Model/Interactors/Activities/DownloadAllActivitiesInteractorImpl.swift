@@ -1,16 +1,8 @@
-//
-//  DownloadAllShopsInteractorNSURLSessionImpl.swift
-//  MadridShopping
-//
-//  Created by Pedro Sánchez Castro on 26/9/17.
-//  Copyright © 2017 pedrosapro. All rights reserved.
-//
-
 import Foundation
 
-class DownloadAllShopsInteractorNSURLSessionImpl: DownloadAllShopsInteractor {
-    func execute(onSuccess: @escaping (Shops) -> Void, onError: errorClosure) {
-        let urlString = "https://madrid-shops.com/json_new/getShops.php"
+class DownloadAllActivitiesInteractorImpl: DownloadAllActivitiesInteractor {
+    func execute(onSuccess: @escaping (Activities) -> Void, onError: errorClosure) {
+        let urlString = "https://madrid-shops.com/json_new/getActivities.php"
         
         let session = URLSession.shared
         if let url = URL(string: urlString) {
@@ -20,8 +12,8 @@ class DownloadAllShopsInteractorNSURLSessionImpl: DownloadAllShopsInteractor {
                     assert(Thread.current == Thread.main)
                     
                     if error == nil {
-                        let shops = parseShops(data: data!)
-                        onSuccess(shops)
+                        let activities = parseActivities(data: data!)
+                        onSuccess(activities)
                     } else {
                         if let myError = onError {
                             myError(error!)
@@ -33,9 +25,10 @@ class DownloadAllShopsInteractorNSURLSessionImpl: DownloadAllShopsInteractor {
         }
     }
     
-    func execute(onSuccess: @escaping (Shops) -> Void) {
+    func execute(onSuccess: @escaping (Activities) -> Void) {
         execute(onSuccess: onSuccess, onError: nil)
     }
     
     
 }
+

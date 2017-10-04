@@ -1,11 +1,3 @@
-//
-//  ShopsViewController+CollectionViewController.swift
-//  MadridShopping
-//
-//  Created by Pedro Sánchez Castro on 25/9/17.
-//  Copyright © 2017 pedrosapro. All rights reserved.
-//
-
 import UIKit
 
 extension ShopsViewController: UICollectionViewDelegate, UICollectionViewDataSource {

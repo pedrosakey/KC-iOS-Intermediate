@@ -1,7 +1,7 @@
 import Foundation
 import CoreLocation
 
-public class Shop {
+public class Activity {
     var name: String
     var description: String = ""
     var latitude: Float? = nil
@@ -16,7 +16,7 @@ public class Shop {
     }
 }
 
-extension Shop {
+extension Activity {
     func getLocation() -> CLLocation {
         
         var shopLocation = CLLocation()
@@ -24,8 +24,9 @@ extension Shop {
         guard let latitude = self.latitude else { return shopLocation }
         guard let longitude = self.longitude else { return shopLocation }
         
-         shopLocation = CLLocation(latitude: CLLocationDegrees(latitude), longitude: CLLocationDegrees(longitude))
+        shopLocation = CLLocation(latitude: CLLocationDegrees(latitude), longitude: CLLocationDegrees(longitude))
         return shopLocation
         
+    }
 }
-}
+
