@@ -5,9 +5,7 @@ class SetExecuteOneInteractorImp : SetExcecuteOneInteractor {
         let defaults = UserDefaults.standard
         
         defaults.set("SAVED", forKey:id)
-        
-        let a = defaults.string(forKey:id)
-                
+                        
         defaults.synchronize()
     }
     
