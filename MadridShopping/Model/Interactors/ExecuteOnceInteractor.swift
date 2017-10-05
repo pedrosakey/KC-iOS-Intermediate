@@ -1,5 +1,5 @@
 import Foundation
 
 protocol ExecuteOnceInteractor {
-    func execute(closure: () -> Void)
+    func execute(id: String, closure: () -> Void)
 }

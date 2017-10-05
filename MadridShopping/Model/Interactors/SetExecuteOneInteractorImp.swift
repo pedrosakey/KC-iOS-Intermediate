@@ -1,11 +1,13 @@
 import Foundation
 
 class SetExecuteOneInteractorImp : SetExcecuteOneInteractor {
-    func execute() {
+    func execute(id: String) {
         let defaults = UserDefaults.standard
         
-        defaults.set("SAVED", forKey:"once")
+        defaults.set("SAVED", forKey:id)
         
+        let a = defaults.string(forKey:id)
+                
         defaults.synchronize()
     }
     

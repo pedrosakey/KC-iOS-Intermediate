@@ -1,9 +1,7 @@
-//
-//  SaveAllActivitiesInteractor.swift
-//  MadridShopping
-//
-//  Created by Pedro Sánchez Castro on 3/10/17.
-//  Copyright © 2017 pedrosapro. All rights reserved.
-//
+import CoreData
 
-import Foundation
+protocol SaveAllActivitiesInteractor {
+    // execute: saves all activities. Return on the main thread
+    func execute(activities: Activities, context: NSManagedObjectContext, onSuccess: @escaping (Activities) -> Void, onError: errorClosure)
+    func execute(activities: Activities, context: NSManagedObjectContext, onSuccess: @escaping (Activities) -> Void)
+}

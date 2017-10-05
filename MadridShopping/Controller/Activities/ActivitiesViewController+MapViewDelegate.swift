@@ -2,31 +2,31 @@ import Foundation
 import MapKit
 import CoreData
 
-extension ShopsViewController: MKMapViewDelegate {
+extension ActivitiesViewController: MKMapViewDelegate {
     
     func mapViewDidFinishLoadingMap(_ mapView: MKMapView) {
         print("Finish loading")
         // MORE anotations
-        let shopCds = self.fetchAllShops()
+        let activityCds = self.fetchAllActivities()
         //Add pin to Maps
-       // let shopcd : ShopCD = shopCds[0]
-        for shopcd in shopCds {
-        let mapPin = mapShopIntoMapPin(shop: mapShopCDIntoShop(shopCD: shopcd))
+        // let activitiycd : ActivitiyCD = activitiyCds[0]
+        for activitycd in activityCds {
+            let mapPin = mapActivityIntoMapPin(activity: mapActivityCDIntoActivity(activityCD: activitycd))
             
-             if(mapPin != nil){
-             self.map.addAnnotation(mapPin!)
-        }
+            if(mapPin != nil){
+                self.map.addAnnotation(mapPin!)
+            }
         }
         
     }
     
     
-    func fetchAllShops () -> [ShopCD] {
-        var shopCDs : [ShopCD] = []
+    func fetchAllActivities () -> [ActivityCD] {
+        var activitiyCDs : [ActivityCD] = []
         
         //Fetch from CD
         // fetch all projects
-        let fetchRequest: NSFetchRequest<ShopCD> = ShopCD.fetchRequest()
+        let fetchRequest: NSFetchRequest<ActivityCD> = ActivityCD.fetchRequest()
         
         // Set the batch size to a suitable number.
         fetchRequest.fetchBatchSize = 20
@@ -37,16 +37,17 @@ extension ShopsViewController: MKMapViewDelegate {
         
         do {
             // run the fetch request
-            shopCDs = try context.fetch(fetchRequest)
-            print("Num records: \( shopCDs.count )")
+            activitiyCDs = try context.fetch(fetchRequest)
+            print("Num records: \( activitiyCDs.count )")
             
             
         } catch {
             print("Error \(error.localizedDescription)")
         }
         
-        return shopCDs
+        return activitiyCDs
     }
-   
+    
     
 }
+

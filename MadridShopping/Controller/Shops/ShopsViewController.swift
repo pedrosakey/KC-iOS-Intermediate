@@ -29,7 +29,7 @@ class ShopsViewController: UIViewController {
         self.map.setRegion(reg, animated: true)
        
        // Download all shops once
-        ExecuteOnceInteractorImp().execute {
+        ExecuteOnceInteractorImp().execute(id: "Shops") {
                inicialize()
         }
         
@@ -45,7 +45,7 @@ class ShopsViewController: UIViewController {
         
         downloadShopsInteractor.execute(onSuccess: { (shops: Shops) in
             //Network connection ok
-            SetExecuteOneInteractorImp().execute()
+            SetExecuteOneInteractorImp().execute(id:"Shops")
             let cacheInteractor = SaveAllShopsInteractorImpl()
             cacheInteractor.execute(shops: shops, context: self.context, onSuccess: { (shops: Shops) in
                 self._fetchedResultsController = nil
@@ -117,7 +117,6 @@ class ShopsViewController: UIViewController {
         // Edit the section name key path and cache name if appropriate.
         // nil for section name key path means "no sections".
         _fetchedResultsController = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: self.context!, sectionNameKeyPath: nil, cacheName: "ShopsCacheFile")
-        //aFetchedResultsController.delegate = self
         
         
         do {

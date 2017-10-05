@@ -2,6 +2,7 @@ import UIKit
 import CoreData
 
 @UIApplicationMain
+
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
@@ -9,24 +10,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var context: NSManagedObjectContext?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        
-        //prueba quitar
-        DownloadAllActivitiesInteractorImpl().execute { (activities: Activities) in
-           
-            print("****************")
-           print(activities.get(index: 0).name)
-            
-            for i in 0...activities.count() {
-                print("Activitity \(activities.get(index: i).name)")
-            }
-            
-        }
-        
+
         self.context = cds.createContainer(dbName: "MadridShopping").viewContext
-        
-       let nav = self.window?.rootViewController as! UINavigationController
-       let mainVC = nav.topViewController as! MainViewController
+        let nav = self.window?.rootViewController as! UINavigationController
+        let mainVC = nav.topViewController as! MainViewController
         mainVC.context = self.context
+        
         
         return true
     }

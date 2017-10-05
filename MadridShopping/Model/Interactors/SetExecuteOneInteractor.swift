@@ -1,5 +1,5 @@
 import Foundation
 
 protocol SetExcecuteOneInteractor {
-    func execute ()
+    func execute (id: String)
 }

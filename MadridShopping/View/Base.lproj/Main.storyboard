@@ -61,7 +61,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <segue destination="aAe-iY-DZ7" kind="show" id="cS1-6Y-MOK"/>
+                                            <segue destination="aAe-iY-DZ7" kind="show" identifier="ShowActivitiesSegue" id="ZVp-ya-r02"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -286,7 +286,7 @@
         <!--Activities-->
         <scene sceneID="31P-zs-PcZ">
             <objects>
-                <viewController title="Activities" id="aAe-iY-DZ7" sceneMemberID="viewController">
+                <viewController title="Activities" id="aAe-iY-DZ7" customClass="ActivitiesViewController" customModule="MadridShopping" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gUG-tA-PZf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -320,7 +320,7 @@
                                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         </collectionViewFlowLayout>
                                         <cells>
-                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ShopCell" id="s0n-u6-Cow" customClass="ShopCell" customModule="MadridShopping" customModuleProvider="target">
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ActivityCell" id="s0n-u6-Cow" customClass="ActivityCell" customModule="MadridShopping" customModuleProvider="target">
                                                 <rect key="frame" x="27.666666666666668" y="0.0" width="359" height="67"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -342,8 +342,8 @@
                                                     </subviews>
                                                 </view>
                                                 <connections>
-                                                    <outlet property="imageView" destination="SIr-XA-7fZ" id="zUr-n5-sBl"/>
-                                                    <outlet property="label" destination="7md-o1-Ik2" id="lCp-kQ-bTa"/>
+                                                    <outlet property="imageView" destination="SIr-XA-7fZ" id="mRc-gr-Hfc"/>
+                                                    <outlet property="label" destination="7md-o1-Ik2" id="gaK-S7-pOY"/>
                                                 </connections>
                                             </collectionViewCell>
                                         </cells>
@@ -364,7 +364,9 @@
                         <viewLayoutGuide key="safeArea" id="v0D-uA-7EO"/>
                     </view>
                     <connections>
-                        <segue destination="mmI-dK-dsb" kind="show" identifier="ShowActivityDetail" id="eAz-VY-HB2"/>
+                        <outlet property="activitiesCollectionView" destination="faD-aF-HLs" id="5Rn-OP-AI2"/>
+                        <outlet property="map" destination="aGm-sj-xPp" id="IaL-Yb-Q1V"/>
+                        <segue destination="mmI-dK-dsb" kind="show" identifier="ShowActivityDetailSegue" id="eAz-VY-HB2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WIB-D1-sFK" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -374,22 +376,22 @@
         <!--Activity Detail-->
         <scene sceneID="LyY-Ii-sel">
             <objects>
-                <viewController title="Activity Detail" id="mmI-dK-dsb" customClass="ShopViewDetailController" customModule="MadridShopping" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Activity Detail" id="mmI-dK-dsb" customClass="ActivityViewDetailController" customModule="MadridShopping" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AqJ-Cf-Gwd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="wUr-sg-fz7">
-                                <rect key="frame" x="0.0" y="64" width="414.33333333333331" height="672"/>
+                                <rect key="frame" x="0.0" y="64" width="414" height="672"/>
                                 <subviews>
                                     <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vg1-mC-2Hx">
-                                        <rect key="frame" x="0.0" y="0.0" width="414.33333333333331" height="224.33333333333331"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="224.33333333333331"/>
                                     </mapView>
                                     <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="fillEqually" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="mcH-W4-pMs" userLabel="Stack View texts">
-                                        <rect key="frame" x="0.0" y="224.33333333333329" width="414.33333333333331" height="223.66666666666671"/>
+                                        <rect key="frame" x="0.0" y="224.33333333333329" width="414" height="223.66666666666671"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Antiguedades Serrano" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cVF-rL-983">
-                                                <rect key="frame" x="0.0" y="0.0" width="414.33333333333331" height="61.333333333333371"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="61.333333333333371"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="28"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -401,7 +403,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calle Jorge Juan" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xjg-DV-qaH">
-                                                <rect key="frame" x="143.66666666666663" y="162.33333333333337" width="127.33333333333337" height="61.333333333333314"/>
+                                                <rect key="frame" x="143.33333333333331" y="162.33333333333337" width="127.33333333333331" height="61.333333333333314"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -412,10 +414,10 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ipF-qv-H1D">
-                                        <rect key="frame" x="0.0" y="448" width="414.33333333333331" height="224"/>
+                                        <rect key="frame" x="0.0" y="448" width="414" height="224"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Descriptionnn" textAlignment="justified" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Hn-F2-bTv" userLabel="Shop Detail Description">
-                                                <rect key="frame" x="0.0" y="0.0" width="414.33333333333331" height="224"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="224"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -442,11 +444,11 @@
                         <viewLayoutGuide key="safeArea" id="QCi-BD-IHh"/>
                     </view>
                     <connections>
-                        <outlet property="mapViewDetail" destination="Vg1-mC-2Hx" id="Jln-cN-1ia"/>
-                        <outlet property="shopDetaiName" destination="cVF-rL-983" id="4DP-6x-J47"/>
-                        <outlet property="shopDetailAddress" destination="Xjg-DV-qaH" id="H4R-6w-gDk"/>
-                        <outlet property="shopDetailDescription" destination="3Hn-F2-bTv" id="zba-TZ-dYD"/>
-                        <outlet property="shopDetailOpeningHours" destination="Mi5-oU-QSE" id="SX3-DI-Wsi"/>
+                        <outlet property="activityDetaiName" destination="cVF-rL-983" id="dXw-Ng-yzw"/>
+                        <outlet property="activityDetailAddress" destination="Xjg-DV-qaH" id="9lr-iC-GQf"/>
+                        <outlet property="activityDetailDescription" destination="3Hn-F2-bTv" id="zaF-bF-F8w"/>
+                        <outlet property="activityDetailOpeningHours" destination="Mi5-oU-QSE" id="6BY-Sq-PNV"/>
+                        <outlet property="mapViewDetail" destination="Vg1-mC-2Hx" id="tdU-NV-oFi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tcH-Uo-qlv" userLabel="First Responder" sceneMemberID="firstResponder"/>
