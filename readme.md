@@ -37,3 +37,14 @@ Cache Image with:
 [https://github.com/mobilejazz/Colloc
 ]()
 
+# Code review
+
+## Prototype.
+
+Making a prototype just with xcode
+
+## Download Fake Implementation
+
+### Example of arquitecture
+
+![Download Fake](https://drive.google.com/uc?id=1L0jXhGMIgOjGol1C4j0d4E4zaHVfvoTU)
