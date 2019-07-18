@@ -200,3 +200,57 @@ class DownloadAllShopsInteractorNSURLSessionImpl: DownloadAllShopsInteractor {
 }
 ```
 
+
+##  Basic AutoLayout MainVC & ShopsVC
+_Autolayout Guide_
+
+## ShopDetail desing + Segue …
+
+## Trigger manual Segue
+_Segue Guide_
+
+## Core Data
+_Core Data Guide_
+
+
+##Fix - ShopsViewController. Wrong Interactor :S
+
+##Core Data - Fetch …
+
+##ExecuteOnce & Fix segue
+
+##Pin Shops in MapView - ShopsViewController …
+
+```
+import MapKit
+import CoreLocation
+
+       //Request Authorizacion
+        self.locationManager.requestWhenInUseAuthorization()
+        
+        //Pin a Map
+        self.map.delegate = self
+        
+        
+        //Location latitude & longitude
+        let madridLocation = CLLocation(latitude: 40.416775, longitude: -3.703790)
+        self.map.setCenter(madridLocation.coordinate, animated: true)
+        
+        //zoom
+        let region = MKCoordinateRegion(center: madridLocation.coordinate, span: MKCoordinateSpan(latitudeDelta: 1, longitudeDelta: 1))
+        let reg = self.map.regionThatFits(region)
+        self.map.setRegion(reg, animated: true)
+        
+        
+        //Add anotation
+        let mapPin = MapPin(coordinate: madridLocation.coordinate)
+        mapPin.title = "titutlo"
+        mapPin.subtitle = "subtittitio"
+        
+        self.map.addAnnotation(mapPin)
+
+⋮
+
+```
+
+
