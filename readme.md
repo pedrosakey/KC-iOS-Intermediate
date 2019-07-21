@@ -254,3 +254,16 @@ import CoreLocation
 ```
 
 
+
+## REFACTORING - Pin Shops in MapView - ShopsViewControll## 
+## Show error without connecti## 
+## Image Cache through CocoaPod
+## Activities - Full activities functionaliti## 
+## Download Activity
+## Activity Prototype
+## English (Base) & Spanish with Strings Localization
+
+_Guia de internacionalizacion COLLOC 
+_
+
+
