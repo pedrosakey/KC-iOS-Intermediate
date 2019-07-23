@@ -1,6 +1,11 @@
 # Madrid Shopping
 
+![version](https://img.shields.io/badge/swift-iOS-purple.svg?maxAge=2592000)
+
 Madrid Shopping is an app for finding shops and activities in Madrid.
+
+**Update**
+The Api Madrid shop is no longer available
 
 
 ## Requeriments
